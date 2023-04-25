@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Montserrat:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(242, 238, 255, 0.5);
+  mix-blend-mode: normal;
+  
+}
+
+.modal-content {
+  background: #f2eeff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #f2eeff;
+  width: 743px;
+  height: 600px;
+}
+
+.modal-content h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  color: rgba(31, 30, 30, 0.85);
+}
+
+body {
+  background-color: rgba(255, 238, 238, 0.5);;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.player {
+    margin: 80px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5d3ddb;
+  }
+
+.container .card {
+    box-sizing: border-box;
+    position: relative;
+    width: 79px;
+    height: 110.27px;
+    border: 1px solid #5d3ddb;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    background-image: linear-gradient(to top, #5d3ddb41, rgba(93 61 219));
+    margin: 0 0 13px 0px;
+}
+.container .row .player:first-child {
+    margin: 197px 58px 121px 99px !important;
+}
+
+.container .row .player:last-child {
+    margin: 197px 98px 121px 58px !important;   
+}
+
+.container .row .player {
+    margin: 197px 58px 121px 58px;
+}

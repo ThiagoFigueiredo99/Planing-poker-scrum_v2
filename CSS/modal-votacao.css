@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Montserrat:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(242, 238, 255, 0.5);
+  mix-blend-mode: normal;
+  
+}
+
+.modal-content {
+  background: #f2eeff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #f2eeff;
+  width: 743px;
+  height: 600px;
+}
+
+.modal-content h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  color: rgba(31, 30, 30, 0.85);
+}
+
+.modal-content label {
+  display: block;
+  margin-left: 182px;
+  margin-bottom: 5px;
+  color: rgba(93, 61, 219, 1);
+}
+
+.modal-content input[type="text"],
+.modal-content textarea {
+  width: 370px;
+  padding: 12px 20px;
+  margin: 8px 165px;
+  box-sizing: border-box;
+  border: 1px solid #5d3ddb;
+  border-radius: 15px;
+  background: #f2eeff;
+}
+
+.modal-content button[type="button"] {
+  color: white;
+  width: 163px;
+  height: 46.76px;
+  border: none;
+  cursor: pointer;
+  margin-left: 2px;
+  background: #5d3ddb;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+}
+
+.modal-content button[type="button"]:hover {
+  background-color: #492baf;
+}
+
+.modal-content button[type="button"]:last-child {
+  background-color: #aaa;
+  float: right;
+}
+
+.modal-content button[type="button"]:last-child:hover {
+  background-color: #888;
+}
+
+.modal-content textarea {
+  height: 200px;
+}
+
+.cancel {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.confirm {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+  }
+ 

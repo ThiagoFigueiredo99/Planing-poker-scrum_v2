@@ -1,62 +1,54 @@
-<input type="checkbox" id="dark-mode-input" />
-<link rel="stylesheet" href="./CSS/teste.css">
-<label class="dark-mode-toggler" for="dark-mode-input">
-    <div></div>
-</label>
-<div class="container">
-    <section class="form">
+<!DOCTYPE html>
+<html>
 
-        <div class="input-header">
-            <div class="title">
-                <h2>Criar uma sala</h2>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./CSS/style-index.css" />
+    <script type="text/javascript" src="./JS/modal.js"></script>
+    <link rel="stylesheet" type="text/css" href="./CSS/modals.css" />
+    <title>Planning Poker</title>
+</head>
 
-            <div class="input-box">
-                <input id="name" type="text" name="name" required>
-                <label for="name">Seu nome</label>
-            </div>
+<body>
+    <header>
+        <div class="poker">
+            <img src="./Imagens/concert.png" alt="Concert Technologies">
+        </div>
+        <div class="Navbar">
+            <ul>
+                <li>Convidar jogadores</li>
+                <li>História da votação</li>
+            </ul>
+        </div>
+    </header>
 
-            <div class="input-box">
-                <input id="name" type="text" name="name" required>
-                <label for="name">Nome da Sala</label>
-            </div>
-            <div class="button-group">
-                <div class="criar-button">
-                    <a href="inicial.html" role="button" aria-pressed="true">
-                        <button>Criar</></button></a>
 
-                    <a href="Espectador.html" role="button" aria-pressed="true">
-                        <button>Espectar</button></a>
-                </div>
-            </div>
+    <div class="button-container">
+        <div class="rectangle">
+            <button class="button">Nova Votação
+                <div class="modal">
 
-            <div class="input-group">
-                <div class="input-header">
-                    <div class="title">
-                        <h2>Entrar em uma sala</h2>
+                    <div class="modal-resultado">
+                        <dialog>
+                            <form>
+                                <label for="title">Título:</label>
+                                <input type="text" id="title" name="title">
+                                <label for="description">Descrição:</label>
+                                <textarea id="description" name="description"></textarea>
+                                <div class="buttons">
+                                    <button type="button">cancelar</button>
+
+
+                                </div>
+                            </form>
+                        </dialog>
                     </div>
+            </button>
 
-                    <div class="input-box">
-                        <input id="name" type="text" name="name" required>
-                        <label for="name">Seu nome</label>
-                    </div>
 
-                    <div class="input-box">
-                        <input id="name" type="text" name="name" required>
-                        <label for="name">Nome da Sala</label>
-                    </div>
 
-                    <div class="button-group">
-                        <div class="criar-button">
-                            <a href="inicial.html" role="button" aria-pressed="true">
-                                <button>Entrar</></button></a>
+</body>
 
-                            <a href="Espectador.html" role="button" aria-pressed="true">
-                                <button>Espectar</button></a>
-                        </div>
-
-                    </div>
-                </div>
-    </section>
-
-</div>
+</html>
