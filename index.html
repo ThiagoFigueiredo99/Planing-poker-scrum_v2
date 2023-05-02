@@ -1,95 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="./CSS/style-index.css" />
-  <link rel="stylesheet" type="text/css" href="./CSS/modals.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Planning Poker</title>
+  <link rel="stylesheet" href="CSS/style-index.css" />
+  <script defer src="/JS/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
 </head>
 
 <body>
   <header>
-    <div class="poker">
-      <img src="./Imagens/concert.png" alt="Concert Technologies">
+    <div class="logo-container">
+      <img class="logo" src="Imagens/concert.png" alt="logo da concert" />
     </div>
-    <div class="Navbar">
-      <ul>
-        <li>Convidar jogadores</li>
-        <li>História da votação</li>
-      </ul>
+    <div class="navbar">
+      <div class="container">
+        <button class="secundary-button">
+          <span id="foreshadow-button">Estimativa</span>
+        </button>
+        <div id="foreshadow-modal" class="modal-area hidden">
+          <div class="modal-container">
+            <button id="close-foreshadow-modal" class="secundary-button">
+              <span>Fechar</span>
+            </button>
+            <span>Estimativas</span>
+            <div class="cards-container">
+              <div class="card-data">
+                <div class="card foreshadow">
+                  <span class="card-result">-</span>
+                </div>
+                <div class="votes-preview">
+                  <span class="player-name">Bigua</span><span class="player-name">Romário</span><span class="player-name">Bruna</span>
+                  <span class="player-name">Bigua</span><span class="player-name">Romário</span>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="card foreshadow">
+                  <span class="card-result">-</span>
+                </div>
+                <div class="votes-preview">
+                  <span class="player-name">Bigua</span><span class="player-name">Romário</span><span class="player-name">Bruna</span>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="card foreshadow">
+                  <span class="card-result">-</span>
+                </div>
+                <div class="votes-preview">
+                  <span class="player-name">Bigua</span><span class="player-name">Romário</span><span class="player-name">Bruna</span>
+                </div>
+              </div>
+              <div class="card-data">
+                <div class="card foreshadow">
+                  <span class="card-result">-</span>
+                </div>
+                <div class="votes-preview">
+                  <span class="player-name">Bigua</span><span class="player-name">Romário</span><span class="player-name">Bruna</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <button id="voting-history-button" class="secundary-button">
+          <span id="history-button">História da votação</span>
+        </button>
+        <div id="voting-history-modal" class="modal-area hidden">
+          <div class="modal-container">
+            <form>
+              <span class="modal-title">História a ser votada</span>
+              <label for="title">Título</label>
+              <input type="text" name="title" id="title" readonly value="title" />
+              <label for="description">Descrição</label>
+              <input type="text" name="description" id="description" readonly value="descritpion" />
+              <button id="close-voting-history-modal" type="button" class="primary-button"><span>Voltar</span></button>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 
-  <div class="loader"></div>
-
-
-  <div class="container">
-    <div class="row">
-      <div class="player">
-        <p>Player 1</p>
-        <div class="card">
-          <span>?</span>
+  <main>
+    <section class="upper-row">
+      <div class="cards-container">
+        <div class="card-data">
+          <div class="card">
+            <span class="card-result">-</span>
+          </div>
+          <div class="votes-preview">
+            <span class="player-name">Romario</span>
+          </div>
+        </div>
+        <div class="card-data">
+          <div class="card">
+            <span class="card-result">-</span>
+          </div>
+          <div class="votes-preview">
+            <span class="player-name">Chicó</span>
+          </div>
+        </div>
+        <div class="card-data">
+          <div class="card">
+            <span class="card-result">-</span>
+          </div>
+          <div class="votes-preview">
+            <span class="player-name">Doninha</span>
+          </div>
+        </div>
+        <div class="card-data">
+          <div class="card">
+            <span class="card-result">-</span>
+          </div>
+          <div class="votes-preview">
+            <span class="player-name">Bigode</span>
+          </div>
         </div>
       </div>
-      <div class="player">
-        <p>Player 2</p>
-        <div class="card">
-          <span>?</span>
-        </div>
+    </section>
+    <div class="menu">
+      <span>Iniciar votação</span>
+      <div class="buttons-container">
+        <button class="light-button">
+          <span id="new-voting-button">Nova votação</span>
+        </button>
+        <button class="primary-button" id="start-button">
+          <span>Iniciar</span>
+        </button>
       </div>
-      <div class="player">
-        <p>Player 3</p>
-        <div class="card">
-          <span>?</span>
-        </div>
-      </div>
-      <div class="player">
-        <p>Player 4</p>
-        <div class="card">
-          <span>?</span>
+      <div id="new-voting-modal" class="modal-area hidden">
+        <div class="modal-container">
+          <form>
+            <span class="modal-title">Nova votação</span>
+            <label for="title">Título</label>
+            <input type="text" name="title" id="title" />
+            <label for="description">Descrição</label>
+            <input type="text" name="description" id="description" />
+            <div class="form-buttons">
+              <button class="primary-button"><span>Confirmar</span></button>
+              <button type="button" class="danger-button">
+                <span>Cancelar</span>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
-
-    <div class="button-container">
-      <div class="rectangle">
-        <button class="button newVote">Nova Votação</button>
-      </div>
+    <div class="modal-area hidden">
+      <section class="splide" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">Slide 01</li>
+            <li class="splide__slide">Slide 02</li>
+            <li class="splide__slide">Slide 03</li>
+          </ul>
+        </div>
+      </section>
     </div>
-
-    <div class="row">
-      <div class="player">
-        <p>Player 5</p>
-        <div class="card">
-          <span>?</span>
+    <section class="lower-row">
+      <div class="cards-container">
+        <div class="card-data">
+          <div class="card">
+            <span class="card-result">-</span>
+          </div>
+          <div class="votes-preview">
+            <span class="player-name">Fulano</span>
+          </div>
+        </div>
+        <div class="card-data">
+          <div class="card">
+            <span class="card-result">-</span>
+          </div>
+          <div class="votes-preview">
+            <span class="player-name">Ciclano</span>
+          </div>
+        </div>
+        <div class="card-data">
+          <div class="card">
+            <span class="card-result">-</span>
+          </div>
+          <div class="votes-preview">
+            <span class="player-name">Beltrano</span>
+          </div>
+        </div>
+        <div class="card-data">
+          <div class="card">
+            <span class="card-result">-</span>
+          </div>
+          <div class="votes-preview">
+            <span class="player-name">Lider</span>
+          </div>
         </div>
       </div>
-      <div class="player">
-        <p>Player 6</p>
-        <div class="card">
-          <span>?</span>
-        </div>
-      </div>
-      <div class="player">
-        <p>Player 7</p>
-        <div class="card">
-          <span>?</span>
-        </div>
-      </div>
-      <div class="player">
-        <p>Player 8</p>
-        <div class="card">
-          <span>?</span>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="/js/classes.js"></script>
-  <script src="/js/index.js"></script>
+    </section>
+  </main>
 </body>
+<script>
+  new Splide(".splide").mount();
+</script>
 
 </html>
