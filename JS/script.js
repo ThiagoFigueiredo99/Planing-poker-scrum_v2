@@ -35,6 +35,11 @@ dangerButton.addEventListener("click", () => {
   newVotingModal.classList.add("hidden");
 });
 
+const StartButton = document.querySelector("#start-button");
+const newStartModal = document.querySelector("#new-start-modal");
+
+StartButton;
+
 const foreshadowModal = document.querySelector("#foreshadow-modal");
 
 const foreshadowButton = document.querySelector("#foreshadow-button");
@@ -66,28 +71,28 @@ votingHistoryButton.addEventListener("click", () => {
 
 let cache = {};
 
-const fibonacci = (n) => {
-  if (n <= 1) {
-    return n;
-  }
+// const fibonacci = (n) => {
+//   if (n <= 1) {
+//     return n;
+//   }
 
-  if (cache[n]) {
-    return cache[n];
-  }
+//   if (cache[n]) {
+//     return cache[n];
+//   }
 
-  const result = fibonacci(n - 1) + fibonacci(n - 2);
+//   const result = fibonacci(n - 1) + fibonacci(n - 2);
 
-  cache[n] = result;
+//   cache[n] = result;
 
-  return result;
-};
+//   return result;
+// };
 
-const startButton = document.querySelector("#start-button");
-startButton.addEventListener("click", () => {
-  cardResults.forEach((el, idx) => {
-    console.log(idx);
-    el.innerText = fibonacci(idx);
-  });
-});
+// const startButton = document.querySelector("#start-button");
+// startButton.addEventListener("click", () => {
+//   cardResults.forEach((el, idx) => {
+//     console.log(idx);
+//     el.innerText = fibonacci(idx);
+//   });
+// });
 
-const cardResults = document.querySelectorAll(".card-result");
+// const cardResults = document.querySelectorAll(".card-result");

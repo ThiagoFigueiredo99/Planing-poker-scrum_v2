@@ -7,12 +7,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Planning Poker</title>
   <link rel="stylesheet" href="CSS/style-index.css" />
-  <script defer src="/JS/script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet" />
+  <script defer src="JS/script.js"></script>
+  <script defer src="JS/carrosel.js"></script>
+  <script type="module" src="JS/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/css/splide.min.css">
+  <link rel="stylesheet" href="CSS/style-index.css" />
 </head>
 
 <body>
+  <div class="content hidden-div">
+    <div class="splide__wrapper">
+      <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="1">1</h3>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="2">2</h3>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="3">3</h3>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="5">5</h3>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="8">8</h3>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="13">13</h3>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="21">21</h3>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="34">34</h3>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="55">55</h3>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="89">89</h3>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="?">?</h3>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="card">
+                <div class="card__content">
+                  <h3 class="card__title" data-value="coffe"><svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cup-hot" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5ZM2.64 13.825 1.123 7h11.754l-1.517 6.825A1.5 1.5 0 0 1 9.896 15H4.104a1.5 1.5 0 0 1-1.464-1.175Z" />
+                      <path d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z" />
+                    </svg></h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="form-buttons">
+            <button class="primary-button confirm-vote"><span>Confirmar</span></button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <header>
     <div class="logo-container">
       <img class="logo" src="Imagens/concert.png" alt="logo da concert" />
@@ -29,7 +134,7 @@
             </button>
             <span>Estimativas</span>
             <div class="cards-container">
-              <div class="card-data">
+              <div class="card-data estimated">
                 <div class="card foreshadow">
                   <span class="card-result">-</span>
                 </div>
@@ -38,7 +143,7 @@
                   <span class="player-name">Bigua</span><span class="player-name">Romário</span>
                 </div>
               </div>
-              <div class="card-data">
+              <div class="card-data estimated">
                 <div class="card foreshadow">
                   <span class="card-result">-</span>
                 </div>
@@ -46,7 +151,7 @@
                   <span class="player-name">Bigua</span><span class="player-name">Romário</span><span class="player-name">Bruna</span>
                 </div>
               </div>
-              <div class="card-data">
+              <div class="card-data estimated">
                 <div class="card foreshadow">
                   <span class="card-result">-</span>
                 </div>
@@ -54,7 +159,7 @@
                   <span class="player-name">Bigua</span><span class="player-name">Romário</span><span class="player-name">Bruna</span>
                 </div>
               </div>
-              <div class="card-data">
+              <div class="card-data estimated">
                 <div class="card foreshadow">
                   <span class="card-result">-</span>
                 </div>
@@ -75,9 +180,9 @@
             <form>
               <span class="modal-title">História a ser votada</span>
               <label for="title">Título</label>
-              <input type="text" name="title" id="title" readonly value="title" />
+              <input type="text" name="title" id="title" class="title-history" readonly value="title" />
               <label for="description">Descrição</label>
-              <input type="text" name="description" id="description" readonly value="descritpion" />
+              <input type="text" name="description" id="description" class="desc-history" readonly value="descritpion" />
               <button id="close-voting-history-modal" type="button" class="primary-button"><span>Voltar</span></button>
             </form>
           </div>
@@ -91,15 +196,15 @@
       <div class="cards-container">
         <div class="card-data">
           <div class="card">
-            <span class="card-result">-</span>
+            <span class="card-result" aria-label="thigas">-</span>
           </div>
           <div class="votes-preview">
-            <span class="player-name">Romario</span>
+            <span class="player-name">Thigas</span>
           </div>
         </div>
         <div class="card-data">
           <div class="card">
-            <span class="card-result">-</span>
+            <span class="card-result" aria-label="chico">-</span>
           </div>
           <div class="votes-preview">
             <span class="player-name">Chicó</span>
@@ -107,7 +212,7 @@
         </div>
         <div class="card-data">
           <div class="card">
-            <span class="card-result">-</span>
+            <span class="card-result" aria-label="doninha">-</span>
           </div>
           <div class="votes-preview">
             <span class="player-name">Doninha</span>
@@ -115,7 +220,7 @@
         </div>
         <div class="card-data">
           <div class="card">
-            <span class="card-result">-</span>
+            <span class="card-result" aria-label="bigode">-</span>
           </div>
           <div class="votes-preview">
             <span class="player-name">Bigode</span>
@@ -129,44 +234,34 @@
         <button class="light-button">
           <span id="new-voting-button">Nova votação</span>
         </button>
-        <button class="primary-button" id="start-button">
+        <button class="primary-button start-button" id="start-button">
           <span>Iniciar</span>
         </button>
       </div>
       <div id="new-voting-modal" class="modal-area hidden">
         <div class="modal-container">
-          <form>
+          <section class="form">
             <span class="modal-title">Nova votação</span>
             <label for="title">Título</label>
-            <input type="text" name="title" id="title" />
+            <input type="text" name="title" id="title" class="inp-title" />
             <label for="description">Descrição</label>
-            <input type="text" name="description" id="description" />
+            <input type="text" name="description" id="description" class="inp-desc" />
             <div class="form-buttons">
-              <button class="primary-button"><span>Confirmar</span></button>
+              <button class="primary-button confirmbtn-vote"><span>Confirmar</span></button>
               <button type="button" class="danger-button">
                 <span>Cancelar</span>
               </button>
             </div>
-          </form>
+          </section>
         </div>
       </div>
     </div>
-    <div class="modal-area hidden">
-      <section class="splide" aria-label="Splide Basic HTML Example">
-        <div class="splide__track">
-          <ul class="splide__list">
-            <li class="splide__slide">Slide 01</li>
-            <li class="splide__slide">Slide 02</li>
-            <li class="splide__slide">Slide 03</li>
-          </ul>
-        </div>
-      </section>
-    </div>
+
     <section class="lower-row">
       <div class="cards-container">
         <div class="card-data">
           <div class="card">
-            <span class="card-result">-</span>
+            <span class="card-result" aria-label="fulano">-</span>
           </div>
           <div class="votes-preview">
             <span class="player-name">Fulano</span>
@@ -174,7 +269,7 @@
         </div>
         <div class="card-data">
           <div class="card">
-            <span class="card-result">-</span>
+            <span class="card-result" aria-label="ciclano">-</span>
           </div>
           <div class="votes-preview">
             <span class="player-name">Ciclano</span>
@@ -182,7 +277,7 @@
         </div>
         <div class="card-data">
           <div class="card">
-            <span class="card-result">-</span>
+            <span class="card-result" aria-label="beltrano">-</span>
           </div>
           <div class="votes-preview">
             <span class="player-name">Beltrano</span>
@@ -190,18 +285,16 @@
         </div>
         <div class="card-data">
           <div class="card">
-            <span class="card-result">-</span>
+            <span class="card-result" aria-label="nick">-</span>
           </div>
           <div class="votes-preview">
-            <span class="player-name">Lider</span>
+            <span class="player-name">Nick</span>
           </div>
         </div>
       </div>
     </section>
   </main>
+
 </body>
-<script>
-  new Splide(".splide").mount();
-</script>
 
 </html>

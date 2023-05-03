@@ -24,6 +24,10 @@ body {
   background-color: var(--background-light);
 }
 
+.hidden-div {
+  display: none;
+}
+
 header {
   width: 100%;
   display: inline-flex;
@@ -251,7 +255,7 @@ main section.lower-row {
   margin-bottom: 5%;
 }
 
-form {
+section.form {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -355,23 +359,41 @@ input#description {
   background: #fff;
 }
 
-.carrousel {
+.modal-container-initial {
+  width: 66%;
   display: flex;
-  box-shadow: 2px 2px 4px black;
-  overflow: hidden;
-  height: 500px;
-  width: 500px;
+  background: yellow;
+  height: 48%;
 }
 
-.carrousel-card {
-  width: 200px;
-  margin-left: 50px;
-  margin-right: 50px;
-  height: 50%;
-  padding-top: 50%;
-  padding-bottom: 50%;
+.modal-container-initial .splide__list {
   display: flex;
-  border-radius: 10%;
+}
+
+.active {
+  background-color: #5d3ddb;
+}
+
+.splide__wrapper {
+  height: 100%;
   justify-content: center;
-  border: 1px solid var(--primary-purple);
+  align-items: center;
+  display: flex;
+}
+
+.splide__wrapper .splide__pagination {
+  height: 30%;
+  padding: 5.8rem;
+}
+
+.card__title {
+  font-size: 3rem;
+}
+
+.content {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Define a cor de fundo cinza e opacidade */
+  backdrop-filter: blur(1px);
 }
