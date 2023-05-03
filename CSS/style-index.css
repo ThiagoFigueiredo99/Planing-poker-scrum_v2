@@ -304,6 +304,7 @@ section.form {
 
 span.modal-title {
   font-size: 3.2rem;
+  padding: 5rem;
 }
 
 label[for="title"],
@@ -394,6 +395,11 @@ input#description {
   position: fixed;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8); /* Define a cor de fundo cinza e opacidade */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Define a cor de fundo cinza e opacidade */
   backdrop-filter: blur(1px);
 }
